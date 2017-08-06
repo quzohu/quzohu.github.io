@@ -84,27 +84,39 @@
 
 
 
-<meta name="description" content="##基本过程   总反射率可以写为：  (1)   在CZCS算法中忽略Pra,并假设Pa可由单次散射Pas代替。从而有：  (2)  定义大气校正参数:  (3)  并假设：  (4)
-##具体计算过程如下：(1) 假设Pr可以精确计算，计算过程见下一章；(2) 假设Pw在NIR波段b1和b2上为0，由公式（2）可以计算出两个Pas1和Pas2；(3) 由公式(3)(4)计算出n的值，从而对任意">
+<meta name="description" content="##瑞利光学厚度计算过程瑞利光学厚度&amp;tau;r与去极化因子&amp;delta;有关(1)定义ks:(2)瑞利光学厚度&amp;tau;r:(3)当&amp;delta;=0.031时：(4)考虑压强：
+##瑞利散射计算
+###不考虑极化，利用单次散射近似计算
+###考虑极化和多次散射(1)假设已知辐射的傅里叶系数：Im(2)计算总密度：(3)计算瑞利散射：
+##还需解决的问题：(1)如何利用successive or">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NIR算法1">
-<meta property="og:url" content="http://yoursite.com/2017/08/06/NIR算法1/index.html">
+<meta property="og:title" content="NIR算法2-瑞利散射和瑞利光学厚度计算">
+<meta property="og:url" content="http://yoursite.com/2017/08/06/NIR算法2-瑞利散射和瑞利光学厚度计算/index.html">
 <meta property="og:site_name" content="quzohu">
-<meta property="og:description" content="##基本过程   总反射率可以写为：  (1)   在CZCS算法中忽略Pra,并假设Pa可由单次散射Pas代替。从而有：  (2)  定义大气校正参数:  (3)  并假设：  (4)
-##具体计算过程如下：(1) 假设Pr可以精确计算，计算过程见下一章；(2) 假设Pw在NIR波段b1和b2上为0，由公式（2）可以计算出两个Pas1和Pas2；(3) 由公式(3)(4)计算出n的值，从而对任意">
-<meta property="og:image" content="http://i.imgur.com/7FHXknJ.png">
-<meta property="og:image" content="http://i.imgur.com/prSlhjh.png">
-<meta property="og:image" content="http://i.imgur.com/ZrOmMHe.png">
-<meta property="og:image" content="http://i.imgur.com/9PHjzkG.png">
-<meta property="og:image" content="http://i.imgur.com/uca5c5t.png">
-<meta property="og:image" content="http://i.imgur.com/LZ93gDg.png">
-<meta property="og:image" content="http://i.imgur.com/VsKfjc8.png">
-<meta property="og:updated_time" content="2017-08-06T03:01:10.237Z">
+<meta property="og:description" content="##瑞利光学厚度计算过程瑞利光学厚度&amp;tau;r与去极化因子&amp;delta;有关(1)定义ks:(2)瑞利光学厚度&amp;tau;r:(3)当&amp;delta;=0.031时：(4)考虑压强：
+##瑞利散射计算
+###不考虑极化，利用单次散射近似计算
+###考虑极化和多次散射(1)假设已知辐射的傅里叶系数：Im(2)计算总密度：(3)计算瑞利散射：
+##还需解决的问题：(1)如何利用successive or">
+<meta property="og:image" content="http://i.imgur.com/s6QnCX6.png">
+<meta property="og:image" content="http://i.imgur.com/gevbSGz.png">
+<meta property="og:image" content="http://i.imgur.com/5mP5ZFQ.png">
+<meta property="og:image" content="http://i.imgur.com/tB3sF4d.png">
+<meta property="og:image" content="http://i.imgur.com/EvL5ymS.png">
+<meta property="og:image" content="http://i.imgur.com/cHmuZBK.png">
+<meta property="og:image" content="http://i.imgur.com/H6fasir.png">
+<meta property="og:image" content="http://i.imgur.com/9ICPpPx.png">
+<meta property="og:image" content="http://i.imgur.com/72nCUMt.png">
+<meta property="og:image" content="http://i.imgur.com/DUHbepU.png">
+<meta property="og:updated_time" content="2017-08-06T03:55:13.563Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NIR算法1">
-<meta name="twitter:description" content="##基本过程   总反射率可以写为：  (1)   在CZCS算法中忽略Pra,并假设Pa可由单次散射Pas代替。从而有：  (2)  定义大气校正参数:  (3)  并假设：  (4)
-##具体计算过程如下：(1) 假设Pr可以精确计算，计算过程见下一章；(2) 假设Pw在NIR波段b1和b2上为0，由公式（2）可以计算出两个Pas1和Pas2；(3) 由公式(3)(4)计算出n的值，从而对任意">
-<meta name="twitter:image" content="http://i.imgur.com/7FHXknJ.png">
+<meta name="twitter:title" content="NIR算法2-瑞利散射和瑞利光学厚度计算">
+<meta name="twitter:description" content="##瑞利光学厚度计算过程瑞利光学厚度&amp;tau;r与去极化因子&amp;delta;有关(1)定义ks:(2)瑞利光学厚度&amp;tau;r:(3)当&amp;delta;=0.031时：(4)考虑压强：
+##瑞利散射计算
+###不考虑极化，利用单次散射近似计算
+###考虑极化和多次散射(1)假设已知辐射的傅里叶系数：Im(2)计算总密度：(3)计算瑞利散射：
+##还需解决的问题：(1)如何利用successive or">
+<meta name="twitter:image" content="http://i.imgur.com/s6QnCX6.png">
 
 
 
@@ -125,10 +137,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/06/NIR算法1/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/06/NIR算法2-瑞利散射和瑞利光学厚度计算/"/>
 
 
-  <title> NIR算法1 | quzohu </title>
+  <title> NIR算法2-瑞利散射和瑞利光学厚度计算 | quzohu </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -248,7 +260,7 @@
             
             
               
-                NIR算法1
+                NIR算法2-瑞利散射和瑞利光学厚度计算
               
             
           </h1>
@@ -260,7 +272,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-08-06T09:58:57+08:00" content="2017-08-06">
+            <time itemprop="dateCreated" datetime="2017-08-06T11:17:41+08:00" content="2017-08-06">
               2017-08-06
             </time>
           </span>
@@ -288,15 +300,13 @@
       
 
       
-        <p>##基本过程<br>   总反射率可以写为：<br><br>  <img src="http://i.imgur.com/7FHXknJ.png" alt="">(1)<br><br>   在CZCS算法中忽略Pra,并假设Pa可由单次散射Pas代替。从而有：<br><br>  <img src="http://i.imgur.com/prSlhjh.png" alt="">(2)<br><br>  定义大气校正参数:<br><br>  <img src="http://i.imgur.com/ZrOmMHe.png" alt="">(3)<br><br>  并假设：<br><br>  <img src="http://i.imgur.com/9PHjzkG.png" alt="">(4)<br><br></p>
-<p>##具体计算过程如下：<br><br>(1) 假设Pr可以精确计算，计算过程见下一章；<br><br>(2) 假设Pw在NIR波段b1和b2上为0，由公式（2）可以计算出两个Pas1和Pas2；<br><br>(3) 由公式(3)(4)计算出n的值，从而对任意波段有：<br><br>   <img src="http://i.imgur.com/uca5c5t.png" alt="">(5)<br><br>(4) 从而对任意波段有：<br><br>   <img src="http://i.imgur.com/LZ93gDg.png" alt="">(6)<br><br>(5) 又因为：<br><br>   <img src="http://i.imgur.com/VsKfjc8.png" alt="">(7)<br><br>(6) 根据(6)(7)可以计算得出Pw.<br><br></p>
-<p>##还需解决：<br>(1) Pr如何计算；<br><br>(2) Tr和Toz如何计算；<br></p>
-<p>##该方法的问题：<br>(1) 忽略了Pra,并假设为单次散射；<br><br>(2) 公式(4)中的关系是否可靠；<br><br>(3) 假设Pw在NIR波段上为0，是否合理。</p>
+        <p>##瑞利光学厚度计算过程<br>瑞利光学厚度&tau;<sub>r</sub>与去极化因子&delta;有关<br><br>(1)定义k<sub>s</sub>:<br><br><img src="http://i.imgur.com/s6QnCX6.png" alt=""><br><br>(2)瑞利光学厚度&tau;<sub>r</sub>:<br><br><img src="http://i.imgur.com/gevbSGz.png" alt=""><br><br>(3)当&delta;=0.031时：<br><br><img src="http://i.imgur.com/5mP5ZFQ.png" alt=""><br><br>(4)考虑压强：<br><br><img src="http://i.imgur.com/tB3sF4d.png" alt=""><br></p>
+<p>##瑞利散射计算</p>
+<p>###不考虑极化，利用单次散射近似计算<br><img src="http://i.imgur.com/EvL5ymS.png" alt=""><br><br><img src="http://i.imgur.com/cHmuZBK.png" alt=""><br><br><img src="http://i.imgur.com/H6fasir.png" alt=""><br><br><img src="http://i.imgur.com/9ICPpPx.png" alt=""><br></p>
+<p>###考虑极化和多次散射<br>(1)假设已知辐射的傅里叶系数：I<sub>m</sub><br><br>(2)计算总密度：<br><br><img src="http://i.imgur.com/72nCUMt.png" alt=""><br><br>(3)计算瑞利散射：<br><br><img src="http://i.imgur.com/DUHbepU.png" alt=""><br></p>
+<p>##还需解决的问题：<br>(1)如何利用successive order of scattering method计算得出傅里叶系数：I<sub>m</sub></p>
 <p>##参考文献：</p>
-<quoteblock>Retrieval of water-leaving radiance and aerosol optical thickness over the oceans with SeaWiFS: a preliminary algorithm</quoteblock>
-
-
-
+<quoteblock>Exact Rayleigh scattering calculations for use with the Nimbus-7 Coastal Zone Color Scanner</quoteblock>
 
       
     </div>
@@ -322,17 +332,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/03/Atomosphere-Calibration-1/" rel="next" title="Atomosphere Calibration 1">
-                <i class="fa fa-chevron-left"></i> Atomosphere Calibration 1
+              <a href="/2017/08/06/NIR算法1/" rel="next" title="NIR算法1">
+                <i class="fa fa-chevron-left"></i> NIR算法1
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/06/NIR算法2-瑞利散射和瑞利光学厚度计算/" rel="prev" title="NIR算法2-瑞利散射和瑞利光学厚度计算">
-                NIR算法2-瑞利散射和瑞利光学厚度计算 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
