@@ -84,39 +84,36 @@
 
 
 
-<meta name="description" content="##瑞利光学厚度计算过程瑞利光学厚度&amp;tau;r与去极化因子&amp;delta;有关(1)定义ks:(2)瑞利光学厚度&amp;tau;r:(3)当&amp;delta;=0.031时：(4)考虑压强：
-##瑞利散射计算
-###不考虑极化，利用单次散射近似计算
-###考虑极化和多次散射(1)假设已知辐射的傅里叶系数：Im(2)计算总密度：(3)计算瑞利散射：
-##还需解决的问题：(1)如何利用successive or">
+<meta name="description" content="##CZCS算法1 传感器辐亮度：其中S和I在实验室中标定好。2 所需要的数据：3 臭氧光学厚度：4 通过假设Lw(4)=0,推出La(4),从而计算得出e(i,4)。5 假设e(2,4)=e(3,4)=1;e(1,4)=0.95推出其他波段的Lw。
+##具体过程(1)总辐射：(2)路径辐射：(3)在单次散射近似中，Lra=0;(4)Lr和La的计算：(5)散射的计算：(6)令Lg=0,Lf=0;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NIR算法2-瑞利散射和瑞利光学厚度计算">
-<meta property="og:url" content="http://yoursite.com/2017/08/06/NIR算法2-瑞利散射和瑞利光学厚度计算/index.html">
+<meta property="og:title" content="CZCS算法">
+<meta property="og:url" content="http://yoursite.com/2017/08/18/CZCS算法/index.html">
 <meta property="og:site_name" content="quzohu">
-<meta property="og:description" content="##瑞利光学厚度计算过程瑞利光学厚度&amp;tau;r与去极化因子&amp;delta;有关(1)定义ks:(2)瑞利光学厚度&amp;tau;r:(3)当&amp;delta;=0.031时：(4)考虑压强：
-##瑞利散射计算
-###不考虑极化，利用单次散射近似计算
-###考虑极化和多次散射(1)假设已知辐射的傅里叶系数：Im(2)计算总密度：(3)计算瑞利散射：
-##还需解决的问题：(1)如何利用successive or">
-<meta property="og:image" content="http://i.imgur.com/s6QnCX6.png">
-<meta property="og:image" content="http://i.imgur.com/gevbSGz.png">
-<meta property="og:image" content="http://i.imgur.com/5mP5ZFQ.png">
-<meta property="og:image" content="http://i.imgur.com/tB3sF4d.png">
-<meta property="og:image" content="http://i.imgur.com/EvL5ymS.png">
-<meta property="og:image" content="http://i.imgur.com/cHmuZBK.png">
-<meta property="og:image" content="http://i.imgur.com/H6fasir.png">
-<meta property="og:image" content="http://i.imgur.com/9ICPpPx.png">
-<meta property="og:image" content="http://i.imgur.com/72nCUMt.png">
-<meta property="og:image" content="http://i.imgur.com/DUHbepU.png">
-<meta property="og:updated_time" content="2017-08-06T03:55:13.563Z">
+<meta property="og:description" content="##CZCS算法1 传感器辐亮度：其中S和I在实验室中标定好。2 所需要的数据：3 臭氧光学厚度：4 通过假设Lw(4)=0,推出La(4),从而计算得出e(i,4)。5 假设e(2,4)=e(3,4)=1;e(1,4)=0.95推出其他波段的Lw。
+##具体过程(1)总辐射：(2)路径辐射：(3)在单次散射近似中，Lra=0;(4)Lr和La的计算：(5)散射的计算：(6)令Lg=0,Lf=0;">
+<meta property="og:image" content="http://i.imgur.com/BPaoeuH.png">
+<meta property="og:image" content="http://i.imgur.com/y9q9ZDG.png">
+<meta property="og:image" content="http://i.imgur.com/3CI6iZp.png">
+<meta property="og:image" content="http://i.imgur.com/HuLbBWu.png">
+<meta property="og:image" content="http://i.imgur.com/zaA5rde.png">
+<meta property="og:image" content="http://i.imgur.com/sYilXmq.png">
+<meta property="og:image" content="http://i.imgur.com/gP1PRds.png">
+<meta property="og:image" content="http://i.imgur.com/TRExuMc.png">
+<meta property="og:image" content="http://i.imgur.com/putDYj1.png">
+<meta property="og:image" content="http://i.imgur.com/uJcRKio.png">
+<meta property="og:image" content="http://i.imgur.com/PGLTyCU.png">
+<meta property="og:image" content="http://i.imgur.com/kxNv0q2.png">
+<meta property="og:image" content="http://i.imgur.com/DdXkzkl.png">
+<meta property="og:image" content="http://i.imgur.com/BddqUqF.png">
+<meta property="og:image" content="http://i.imgur.com/GfuFxLv.png">
+<meta property="og:image" content="http://i.imgur.com/qfsLTuc.png">
+<meta property="og:updated_time" content="2017-08-18T08:15:36.961Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NIR算法2-瑞利散射和瑞利光学厚度计算">
-<meta name="twitter:description" content="##瑞利光学厚度计算过程瑞利光学厚度&amp;tau;r与去极化因子&amp;delta;有关(1)定义ks:(2)瑞利光学厚度&amp;tau;r:(3)当&amp;delta;=0.031时：(4)考虑压强：
-##瑞利散射计算
-###不考虑极化，利用单次散射近似计算
-###考虑极化和多次散射(1)假设已知辐射的傅里叶系数：Im(2)计算总密度：(3)计算瑞利散射：
-##还需解决的问题：(1)如何利用successive or">
-<meta name="twitter:image" content="http://i.imgur.com/s6QnCX6.png">
+<meta name="twitter:title" content="CZCS算法">
+<meta name="twitter:description" content="##CZCS算法1 传感器辐亮度：其中S和I在实验室中标定好。2 所需要的数据：3 臭氧光学厚度：4 通过假设Lw(4)=0,推出La(4),从而计算得出e(i,4)。5 假设e(2,4)=e(3,4)=1;e(1,4)=0.95推出其他波段的Lw。
+##具体过程(1)总辐射：(2)路径辐射：(3)在单次散射近似中，Lra=0;(4)Lr和La的计算：(5)散射的计算：(6)令Lg=0,Lf=0;">
+<meta name="twitter:image" content="http://i.imgur.com/BPaoeuH.png">
 
 
 
@@ -137,10 +134,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/06/NIR算法2-瑞利散射和瑞利光学厚度计算/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/18/CZCS算法/"/>
 
 
-  <title> NIR算法2-瑞利散射和瑞利光学厚度计算 | quzohu </title>
+  <title> CZCS算法 | quzohu </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -260,7 +257,7 @@
             
             
               
-                NIR算法2-瑞利散射和瑞利光学厚度计算
+                CZCS算法
               
             
           </h1>
@@ -272,8 +269,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-08-06T11:17:41+08:00" content="2017-08-06">
-              2017-08-06
+            <time itemprop="dateCreated" datetime="2017-08-18T14:14:42+08:00" content="2017-08-18">
+              2017-08-18
             </time>
           </span>
 
@@ -300,14 +297,11 @@
       
 
       
-        <p>##瑞利光学厚度计算过程<br>瑞利光学厚度&tau;<sub>r</sub>与去极化因子&delta;有关<br><br>(1)定义k<sub>s</sub>:<br><br><img src="http://i.imgur.com/s6QnCX6.png" alt=""><br><br>(2)瑞利光学厚度&tau;<sub>r</sub>:<br><br><img src="http://i.imgur.com/gevbSGz.png" alt=""><br><br>(3)当&delta;=0.031时：<br><br><img src="http://i.imgur.com/5mP5ZFQ.png" alt=""><br><br>(4)考虑压强：<br><br><img src="http://i.imgur.com/tB3sF4d.png" alt=""><br></p>
-<p>##瑞利散射计算</p>
-<p>###不考虑极化，利用单次散射近似计算<br><img src="http://i.imgur.com/EvL5ymS.png" alt=""><br><br><img src="http://i.imgur.com/cHmuZBK.png" alt=""><br><br><img src="http://i.imgur.com/H6fasir.png" alt=""><br><br><img src="http://i.imgur.com/9ICPpPx.png" alt=""><br></p>
-<p>###考虑极化和多次散射<br>(1)假设已知辐射的傅里叶系数：I<sub>m</sub><br><br>(2)计算总密度：<br><br><img src="http://i.imgur.com/72nCUMt.png" alt=""><br><br>(3)计算瑞利散射：<br><br><img src="http://i.imgur.com/DUHbepU.png" alt=""><br></p>
-<p>##还需解决的问题：<br>(1)如何利用successive order of scattering method计算得出傅里叶系数：I<sub>m</sub></p>
-<p>##参考文献：</p>
-<quoteblock>Exact Rayleigh scattering calculations for use with the Nimbus-7 Coastal Zone Color Scanner</quoteblock>
-
+        <p>##CZCS算法<br>1 传感器辐亮度：<br><br><img src="http://i.imgur.com/BPaoeuH.png" alt=""><br><br>其中S和I在实验室中标定好。<br><br>2 所需要的数据：<br><br><img src="http://i.imgur.com/y9q9ZDG.png" alt=""><br><br>3 臭氧光学厚度：<br><br><img src="http://i.imgur.com/3CI6iZp.png" alt=""><br><br>4 通过假设Lw(4)=0,推出La(4),从而计算得出e(i,4)。<br><br>5 假设e(2,4)=e(3,4)=1;e(1,4)=0.95推出其他波段的Lw。<br></p>
+<p>##具体过程<br>(1)总辐射：<br><br><img src="http://i.imgur.com/HuLbBWu.png" alt=""><br><br>(2)路径辐射：<br><br><img src="http://i.imgur.com/zaA5rde.png" alt=""><br><br>(3)在单次散射近似中，Lra=0;<br><br>(4)Lr和La的计算：<br><br><img src="http://i.imgur.com/sYilXmq.png" alt=""><br><br><img src="http://i.imgur.com/gP1PRds.png" alt=""><br><br><img src="http://i.imgur.com/TRExuMc.png" alt=""><br><br><img src="http://i.imgur.com/putDYj1.png" alt=""><br><br><img src="http://i.imgur.com/uJcRKio.png" alt=""><br><br>(5)散射的计算：<br><br><img src="http://i.imgur.com/PGLTyCU.png" alt=""><br><br><img src="http://i.imgur.com/kxNv0q2.png" alt=""><br><br>(6)令Lg=0,Lf=0;<br><br><img src="http://i.imgur.com/DdXkzkl.png" alt=""><br><br>(7)从而有：<br><br><img src="http://i.imgur.com/BddqUqF.png" alt=""><br><br>其中：<br><br><img src="http://i.imgur.com/GfuFxLv.png" alt=""><br><br>(8)由于CZCS在仅有一个波段在较长，无法计算e。因此假设已知：Lw=0.5,0.3,0.015在520nm,550nm,670nm。<br>然后计算e(2,4),e(3,4),e(4,4)，并外插出e(1,4)。<br></p>
+<p>##存在的问题<br><img src="http://i.imgur.com/qfsLTuc.png" alt=""><br></p>
+<p>##参考文献</p>
+<quoteblock>Coastal zone color scanner “system calibration”: A retrospective examination</quoteblock>
       
     </div>
 
@@ -332,17 +326,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/06/NIR算法1/" rel="next" title="NIR算法1">
-                <i class="fa fa-chevron-left"></i> NIR算法1
+              <a href="/2017/08/11/NIR算法3-SOS方法/" rel="next" title="NIR算法3-SOS方法">
+                <i class="fa fa-chevron-left"></i> NIR算法3-SOS方法
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/11/NIR算法3-SOS方法/" rel="prev" title="NIR算法3-SOS方法">
-                NIR算法3-SOS方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
