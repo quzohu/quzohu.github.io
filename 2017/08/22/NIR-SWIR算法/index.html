@@ -84,27 +84,29 @@
 
 
 
-<meta name="description" content="##基本过程   总反射率可以写为：  (1)   在CZCS算法中忽略Pra,并假设Pa可由单次散射Pas代替。从而有：  (2)  定义大气校正参数:  (3)  并假设：  (4)
-##具体计算过程如下：(1) 假设Pr可以精确计算，计算过程见下一章；(2) 假设Pw在NIR波段b1和b2上为0，由公式（2）可以计算出两个Pas1和Pas2；(3) 由公式(3)(4)计算出n的值，从而对任意">
+<meta name="description" content="##基本思想在大气校正之前，利用浑浊水体指数来将水体分类。
+##基本过程（1）水体指数：其中：在MODIS中可以近似为：大于1.1时为浑浊水体【1】。（2）利用NIR波段或SWIR波段进行校正。（3）对于可以使用NIR波段的区域尽量使用NIR波段。
+##参考文献：
+【1】Detection of turbid waters and absorbing aerosols for the MODIS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NIR算法1">
-<meta property="og:url" content="http://yoursite.com/2017/08/06/NIR算法1/index.html">
+<meta property="og:title" content="NIR-SWIR算法">
+<meta property="og:url" content="http://yoursite.com/2017/08/22/NIR-SWIR算法/index.html">
 <meta property="og:site_name" content="quzohu">
-<meta property="og:description" content="##基本过程   总反射率可以写为：  (1)   在CZCS算法中忽略Pra,并假设Pa可由单次散射Pas代替。从而有：  (2)  定义大气校正参数:  (3)  并假设：  (4)
-##具体计算过程如下：(1) 假设Pr可以精确计算，计算过程见下一章；(2) 假设Pw在NIR波段b1和b2上为0，由公式（2）可以计算出两个Pas1和Pas2；(3) 由公式(3)(4)计算出n的值，从而对任意">
-<meta property="og:image" content="http://i.imgur.com/7FHXknJ.png">
-<meta property="og:image" content="http://i.imgur.com/prSlhjh.png">
-<meta property="og:image" content="http://i.imgur.com/ZrOmMHe.png">
-<meta property="og:image" content="http://i.imgur.com/9PHjzkG.png">
-<meta property="og:image" content="http://i.imgur.com/uca5c5t.png">
-<meta property="og:image" content="http://i.imgur.com/LZ93gDg.png">
-<meta property="og:image" content="http://i.imgur.com/VsKfjc8.png">
-<meta property="og:updated_time" content="2017-08-06T03:01:10.237Z">
+<meta property="og:description" content="##基本思想在大气校正之前，利用浑浊水体指数来将水体分类。
+##基本过程（1）水体指数：其中：在MODIS中可以近似为：大于1.1时为浑浊水体【1】。（2）利用NIR波段或SWIR波段进行校正。（3）对于可以使用NIR波段的区域尽量使用NIR波段。
+##参考文献：
+【1】Detection of turbid waters and absorbing aerosols for the MODIS">
+<meta property="og:image" content="http://i.imgur.com/n40cM5l.png">
+<meta property="og:image" content="http://i.imgur.com/wnBN1r2.png">
+<meta property="og:image" content="http://i.imgur.com/zQ72Pu7.png">
+<meta property="og:updated_time" content="2017-08-22T13:02:16.999Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NIR算法1">
-<meta name="twitter:description" content="##基本过程   总反射率可以写为：  (1)   在CZCS算法中忽略Pra,并假设Pa可由单次散射Pas代替。从而有：  (2)  定义大气校正参数:  (3)  并假设：  (4)
-##具体计算过程如下：(1) 假设Pr可以精确计算，计算过程见下一章；(2) 假设Pw在NIR波段b1和b2上为0，由公式（2）可以计算出两个Pas1和Pas2；(3) 由公式(3)(4)计算出n的值，从而对任意">
-<meta name="twitter:image" content="http://i.imgur.com/7FHXknJ.png">
+<meta name="twitter:title" content="NIR-SWIR算法">
+<meta name="twitter:description" content="##基本思想在大气校正之前，利用浑浊水体指数来将水体分类。
+##基本过程（1）水体指数：其中：在MODIS中可以近似为：大于1.1时为浑浊水体【1】。（2）利用NIR波段或SWIR波段进行校正。（3）对于可以使用NIR波段的区域尽量使用NIR波段。
+##参考文献：
+【1】Detection of turbid waters and absorbing aerosols for the MODIS">
+<meta name="twitter:image" content="http://i.imgur.com/n40cM5l.png">
 
 
 
@@ -125,10 +127,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/06/NIR算法1/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/22/NIR-SWIR算法/"/>
 
 
-  <title> NIR算法1 | quzohu </title>
+  <title> NIR-SWIR算法 | quzohu </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -248,7 +250,7 @@
             
             
               
-                NIR算法1
+                NIR-SWIR算法
               
             
           </h1>
@@ -260,8 +262,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-08-06T09:58:57+08:00" content="2017-08-06">
-              2017-08-06
+            <time itemprop="dateCreated" datetime="2017-08-22T19:39:00+08:00" content="2017-08-22">
+              2017-08-22
             </time>
           </span>
 
@@ -288,16 +290,10 @@
       
 
       
-        <p>##基本过程<br>   总反射率可以写为：<br><br>  <img src="http://i.imgur.com/7FHXknJ.png" alt="">(1)<br><br>   在CZCS算法中忽略Pra,并假设Pa可由单次散射Pas代替。从而有：<br><br>  <img src="http://i.imgur.com/prSlhjh.png" alt="">(2)<br><br>  定义大气校正参数:<br><br>  <img src="http://i.imgur.com/ZrOmMHe.png" alt="">(3)<br><br>  并假设：<br><br>  <img src="http://i.imgur.com/9PHjzkG.png" alt="">(4)<br><br></p>
-<p>##具体计算过程如下：<br><br>(1) 假设Pr可以精确计算，计算过程见下一章；<br><br>(2) 假设Pw在NIR波段b1和b2上为0，由公式（2）可以计算出两个Pas1和Pas2；<br><br>(3) 由公式(3)(4)计算出n的值，从而对任意波段有：<br><br>   <img src="http://i.imgur.com/uca5c5t.png" alt="">(5)<br><br>(4) 从而对任意波段有：<br><br>   <img src="http://i.imgur.com/LZ93gDg.png" alt="">(6)<br><br>(5) 又因为：<br><br>   <img src="http://i.imgur.com/VsKfjc8.png" alt="">(7)<br><br>(6) 根据(6)(7)可以计算得出Pw.<br><br></p>
-<p>##还需解决：<br>(1) Pr如何计算；<br><br>(2) Tr和Toz如何计算；<br></p>
-<p>##该方法的问题：<br>(1) 忽略了Pra,并假设为单次散射；<br><br>(2) 公式(4)中的关系是否可靠；<br><br>(3) 假设Pw在NIR波段上为0，是否合理。</p>
+        <p>##基本思想<br>在大气校正之前，利用浑浊水体指数来将水体分类。</p>
+<p>##基本过程<br>（1）水体指数：<br><br><img src="http://i.imgur.com/n40cM5l.png" alt=""><br><br>其中：<br><br><img src="http://i.imgur.com/wnBN1r2.png" alt=""><br><br>在MODIS中可以近似为：<br><br><img src="http://i.imgur.com/zQ72Pu7.png" alt=""><br><br>大于1.1时为浑浊水体【1】。<br><br><br>（2）利用NIR波段或SWIR波段进行校正。<br><br>（3）对于可以使用NIR波段的区域尽量使用NIR波段。<br></p>
 <p>##参考文献：</p>
-<quoteblock>Retrieval of water-leaving radiance and aerosol optical thickness over the oceans with SeaWiFS: a preliminary algorithm</quoteblock>
-
-
-
-
+<quoteblock><br>【1】Detection of turbid waters and absorbing aerosols for the MODIS ocean color data processing.<br><br>【2】The NIR-SWIR combined atmospheric correction approach for MODIS ocean color data processing.&lt;/<br><br></quoteblock>
       
     </div>
 
@@ -322,17 +318,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/03/Atomosphere-Calibration-1/" rel="next" title="Atomosphere Calibration 1">
-                <i class="fa fa-chevron-left"></i> Atomosphere Calibration 1
+              <a href="/2017/08/21/半解析辐射模型/" rel="next" title="半解析辐射模型">
+                <i class="fa fa-chevron-left"></i> 半解析辐射模型
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/06/NIR算法2-瑞利散射和瑞利光学厚度计算/" rel="prev" title="NIR算法2-瑞利散射和瑞利光学厚度计算">
-                NIR算法2-瑞利散射和瑞利光学厚度计算 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
