@@ -84,36 +84,24 @@
 
 
 
-<meta name="description" content="##CZCS算法1 传感器辐亮度：其中S和I在实验室中标定好。2 所需要的数据：3 臭氧光学厚度：4 通过假设Lw(4)=0,推出La(4),从而计算得出e(i,4)。5 假设e(2,4)=e(3,4)=1;e(1,4)=0.95推出其他波段的Lw。
-##具体过程(1)总辐射：(2)路径辐射：(3)在单次散射近似中，Lra=0;(4)Lr和La的计算：(5)散射的计算：(6)令Lg=0,Lf=0;">
+<meta name="description" content="##基本步骤
+###瑞利校正(1)定义平均波段：其中：Si是波段响应函数。(2)计算转换因子&amp;beta;：其中：(3)通过SeaDAS中的瑞利查找表（自己的成像几何）计算">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CZCS算法">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/CZCS算法/index.html">
+<meta property="og:title" content="将MODIS大气校正转到其他卫星方法">
+<meta property="og:url" content="http://yoursite.com/2017/08/23/将MODIS大气校正转到其他卫星方法/index.html">
 <meta property="og:site_name" content="quzohu">
-<meta property="og:description" content="##CZCS算法1 传感器辐亮度：其中S和I在实验室中标定好。2 所需要的数据：3 臭氧光学厚度：4 通过假设Lw(4)=0,推出La(4),从而计算得出e(i,4)。5 假设e(2,4)=e(3,4)=1;e(1,4)=0.95推出其他波段的Lw。
-##具体过程(1)总辐射：(2)路径辐射：(3)在单次散射近似中，Lra=0;(4)Lr和La的计算：(5)散射的计算：(6)令Lg=0,Lf=0;">
-<meta property="og:image" content="http://i.imgur.com/BPaoeuH.png">
-<meta property="og:image" content="http://i.imgur.com/y9q9ZDG.png">
-<meta property="og:image" content="http://i.imgur.com/3CI6iZp.png">
-<meta property="og:image" content="http://i.imgur.com/HuLbBWu.png">
-<meta property="og:image" content="http://i.imgur.com/zaA5rde.png">
-<meta property="og:image" content="http://i.imgur.com/sYilXmq.png">
-<meta property="og:image" content="http://i.imgur.com/gP1PRds.png">
-<meta property="og:image" content="http://i.imgur.com/TRExuMc.png">
-<meta property="og:image" content="http://i.imgur.com/putDYj1.png">
-<meta property="og:image" content="http://i.imgur.com/uJcRKio.png">
-<meta property="og:image" content="http://i.imgur.com/PGLTyCU.png">
-<meta property="og:image" content="http://i.imgur.com/kxNv0q2.png">
-<meta property="og:image" content="http://i.imgur.com/DdXkzkl.png">
-<meta property="og:image" content="http://i.imgur.com/BddqUqF.png">
-<meta property="og:image" content="http://i.imgur.com/GfuFxLv.png">
-<meta property="og:image" content="http://i.imgur.com/qfsLTuc.png">
-<meta property="og:updated_time" content="2017-08-18T08:15:36.961Z">
+<meta property="og:description" content="##基本步骤
+###瑞利校正(1)定义平均波段：其中：Si是波段响应函数。(2)计算转换因子&amp;beta;：其中：(3)通过SeaDAS中的瑞利查找表（自己的成像几何）计算">
+<meta property="og:image" content="http://i.imgur.com/Gvr8Xr5.png">
+<meta property="og:image" content="http://i.imgur.com/4htqVgC.png">
+<meta property="og:image" content="http://i.imgur.com/bgH6SHT.png">
+<meta property="og:image" content="http://i.imgur.com/z59wMEH.png">
+<meta property="og:updated_time" content="2017-08-23T08:40:45.128Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CZCS算法">
-<meta name="twitter:description" content="##CZCS算法1 传感器辐亮度：其中S和I在实验室中标定好。2 所需要的数据：3 臭氧光学厚度：4 通过假设Lw(4)=0,推出La(4),从而计算得出e(i,4)。5 假设e(2,4)=e(3,4)=1;e(1,4)=0.95推出其他波段的Lw。
-##具体过程(1)总辐射：(2)路径辐射：(3)在单次散射近似中，Lra=0;(4)Lr和La的计算：(5)散射的计算：(6)令Lg=0,Lf=0;">
-<meta name="twitter:image" content="http://i.imgur.com/BPaoeuH.png">
+<meta name="twitter:title" content="将MODIS大气校正转到其他卫星方法">
+<meta name="twitter:description" content="##基本步骤
+###瑞利校正(1)定义平均波段：其中：Si是波段响应函数。(2)计算转换因子&amp;beta;：其中：(3)通过SeaDAS中的瑞利查找表（自己的成像几何）计算">
+<meta name="twitter:image" content="http://i.imgur.com/Gvr8Xr5.png">
 
 
 
@@ -134,10 +122,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/18/CZCS算法/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/23/将MODIS大气校正转到其他卫星方法/"/>
 
 
-  <title> CZCS算法 | quzohu </title>
+  <title> 将MODIS大气校正转到其他卫星方法 | quzohu </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -257,7 +245,7 @@
             
             
               
-                CZCS算法
+                将MODIS大气校正转到其他卫星方法
               
             
           </h1>
@@ -269,8 +257,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-08-18T14:14:42+08:00" content="2017-08-18">
-              2017-08-18
+            <time itemprop="dateCreated" datetime="2017-08-23T16:02:38+08:00" content="2017-08-23">
+              2017-08-23
             </time>
           </span>
 
@@ -297,11 +285,12 @@
       
 
       
-        <p>##CZCS算法<br>1 传感器辐亮度：<br><br><img src="http://i.imgur.com/BPaoeuH.png" alt=""><br><br>其中S和I在实验室中标定好。<br><br>2 所需要的数据：<br><br><img src="http://i.imgur.com/y9q9ZDG.png" alt=""><br><br>3 臭氧光学厚度：<br><br><img src="http://i.imgur.com/3CI6iZp.png" alt=""><br><br>4 通过假设Lw(4)=0,推出La(4),从而计算得出e(i,4)。<br><br>5 假设e(2,4)=e(3,4)=1;e(1,4)=0.95推出其他波段的Lw。<br></p>
-<p>##具体过程<br>(1)总辐射：<br><br><img src="http://i.imgur.com/HuLbBWu.png" alt=""><br><br>(2)路径辐射：<br><br><img src="http://i.imgur.com/zaA5rde.png" alt=""><br><br>(3)在单次散射近似中，Lra=0;<br><br>(4)Lr和La的计算：<br><br><img src="http://i.imgur.com/sYilXmq.png" alt=""><br><br><img src="http://i.imgur.com/gP1PRds.png" alt=""><br><br><img src="http://i.imgur.com/TRExuMc.png" alt=""><br><br><img src="http://i.imgur.com/putDYj1.png" alt=""><br><br><img src="http://i.imgur.com/uJcRKio.png" alt=""><br><br>(5)散射的计算：<br><br><img src="http://i.imgur.com/PGLTyCU.png" alt=""><br><br><img src="http://i.imgur.com/kxNv0q2.png" alt=""><br><br>(6)令Lg=0,Lf=0;<br><br><img src="http://i.imgur.com/DdXkzkl.png" alt=""><br><br>(7)从而有：<br><br><img src="http://i.imgur.com/BddqUqF.png" alt=""><br><br>其中：<br><br><img src="http://i.imgur.com/GfuFxLv.png" alt=""><br><br>(8)由于CZCS在仅有一个波段在较长，无法计算e。因此假设已知：Lw=0.5,0.3,0.015在520nm,550nm,670nm。<br>然后计算e(2,4),e(3,4),e(4,4)，并外插出e(1,4)。<br></p>
-<p>##存在的问题<br><img src="http://i.imgur.com/qfsLTuc.png" alt=""><br></p>
-<p>##参考文献</p>
-<quoteblock>Coastal zone color scanner “system calibration”: A retrospective examination</quoteblock>
+        <p>##基本步骤</p>
+<p>###瑞利校正<br>(1)定义平均波段：<br><br><img src="http://i.imgur.com/Gvr8Xr5.png" alt=""><br><br>其中：S<sub>i</sub>是波段响应函数。<br><br>(2)计算转换因子&beta;：<br><br><img src="http://i.imgur.com/4htqVgC.png" alt=""><br><br>其中：<br><br><img src="http://i.imgur.com/bgH6SHT.png" alt=""><br><br><img src="http://i.imgur.com/z59wMEH.png" alt=""><br><br>(3)通过SeaDAS中的瑞利查找表（自己的成像几何）计算<p<sub>r(&lambda;)&gt;<sup>MOD</sup>，并利用转换因子&beta;计算p<sub>r</sub>(&lambda;)。<br><br>(4)利用&lambda;<sup>-4</sup>函数，内插得到400-900nm的p<sub>r</sub>。<br><br>(5)并根据该卫星(例如：HJ)自己的波段响应函数，计算HJ卫星的<p<sub>r(&lambda;)&gt;，从而完成瑞利校正。<br></p<sub></p<sub></p>
+<p>###气溶胶校正<br>(1)首先利用相对湿度的辅助数据，选择20个气溶胶模型。<br><br>(2)并根据MODIS卫星数据的e(NIR1,NIR2)来选择2个合适的气溶胶模型。<br><br>(3)然后利用MODIS的查找表进行气溶胶校正。<br></p>
+<p>##存在问题：<br>(1)MODIS卫星过境时间与自己卫星过境时间存在差异。<br><br>(2)如果卫星本身含有SWIR波段或NIR波段，可以通过自身数据获得气溶胶模型。<br></p>
+<p>##参考文献：</p>
+<quoteblock><br>【1】Atmospheric correction of HJ-1 CCD imagery over turbid lake waters.<br><br>【2】Atmospheric correction and cross-calibration of LANDSAT-7/ETM+ imagery over aquatic environments: A multiplatform.<br><br>【3】Remote sensing of ocean color: a methodology for dealing with broad spectral bands and significant out-of-band response.<br><br></quoteblock>
       
     </div>
 
@@ -326,17 +315,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/11/NIR算法3-SOS方法/" rel="next" title="NIR算法3-SOS方法">
-                <i class="fa fa-chevron-left"></i> NIR算法3-SOS方法
+              <a href="/2017/08/22/NIR-SWIR算法/" rel="next" title="NIR-SWIR算法">
+                <i class="fa fa-chevron-left"></i> NIR-SWIR算法
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/21/同时计算水和气溶胶算法/" rel="prev" title="同时计算水和气溶胶算法">
-                同时计算水和气溶胶算法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
